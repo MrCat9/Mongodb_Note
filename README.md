@@ -32,6 +32,18 @@ db.User.update({},{$unset:{'address':''}},false, true)
 db.User.update({},{$set:{'author_name':''}},{multi: 1});
 ```
 
+4_MongoDB数据导入与导出
+
+```
+https://www.cnblogs.com/qingtianyu2015/p/5968400.html
+```
+
+```
+F:\mongodb\bin
+λ mongoexport -d test_database -c test_collection -o C:\Users\admin\Desktop\test.json --type json
+```
+
+
 
 
 
