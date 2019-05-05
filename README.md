@@ -25,3 +25,13 @@ https://www.cnblogs.com/zdfjf/p/6179691.html
 db.User.update({},{$unset:{'address':''}},false, true)
 ```
 
+3_mongoDB增加表中一个字段
+
+例如要增加User表中author_name字段
+```
+db.User.update({},{$set:{'author_name':''}},{multi: 1});
+```
+
+
+
+
